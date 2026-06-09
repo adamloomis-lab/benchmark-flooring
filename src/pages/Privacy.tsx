@@ -1,5 +1,5 @@
+import { Link } from 'wouter'
 import LegalLayout from '../components/LegalLayout'
-import { company } from '../data/site'
 
 export default function Privacy() {
   return (
@@ -38,7 +38,7 @@ export default function Privacy() {
       <h2>Contact us</h2>
       <p>
         If you have questions about this policy or want us to update or delete information you have
-        shared, email us at <a href={`mailto:${company.email}`}>{company.email}</a>.
+        shared, reach us through our <Link href="/quote">contact form</Link> and we will follow up.
       </p>
     </LegalLayout>
   )

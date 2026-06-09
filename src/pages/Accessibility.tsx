@@ -1,5 +1,5 @@
+import { Link } from 'wouter'
 import LegalLayout from '../components/LegalLayout'
-import { company } from '../data/site'
 
 export default function Accessibility() {
   return (
@@ -26,8 +26,8 @@ export default function Accessibility() {
       <h2>Need help or found a barrier?</h2>
       <p>
         If you have trouble using any part of this site, or you would like information in a different
-        format, please email us at <a href={`mailto:${company.email}`}>{company.email}</a> and we will
-        do our best to help and to fix the issue.
+        format, please reach us through our <Link href="/quote">contact form</Link> and we will do our
+        best to help and to fix the issue.
       </p>
     </LegalLayout>
   )

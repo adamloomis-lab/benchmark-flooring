@@ -14,6 +14,10 @@ export const company = {
   // TODO: replace with the real published number when available.
   phone: '',
   phoneHref: '',
+  // NOTE: the owner's email is intentionally NOT rendered anywhere on the site
+  // (no mailto links, not in JSON-LD) to keep it off scrapers. Form submissions
+  // are routed to it via a Netlify email notification configured server-side.
+  // Kept here only for reference.
   email: 'adam.loomis@gmail.com',
   // TODO: add a street address if/when Benchmark wants one listed publicly.
   address: {

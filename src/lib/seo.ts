@@ -30,7 +30,6 @@ export function businessSchema() {
     description: company.shortBlurb,
     slogan: company.tagline,
     ...(company.phone ? { telephone: company.phone } : {}),
-    email: company.email,
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',

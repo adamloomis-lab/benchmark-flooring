@@ -41,9 +41,7 @@ export default function Quote() {
       form.reset()
     } catch {
       setError(
-        'Something went wrong sending your request. Please email us directly at ' +
-          company.email +
-          ' and we will follow up.',
+        'Something went wrong sending your request. Please try again in a moment, and we will follow up as soon as it comes through.',
       )
     }
   }
@@ -207,7 +205,7 @@ export default function Quote() {
               ) : null}
               <div className="contact-item">
                 <Icon name="mail" />
-                <a href={`mailto:${company.email}`}>{company.email}</a>
+                <p>Send your project details using the form and we'll follow up with you personally.</p>
               </div>
               <div className="contact-item">
                 <Icon name="map-pin" />

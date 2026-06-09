@@ -58,7 +58,7 @@ export default function Footer() {
               ) : null}
               <div className="footer-contact-item">
                 <Icon name="mail" />
-                <a href={`mailto:${company.email}`}>{company.email}</a>
+                <Link href="/quote">Request a free quote</Link>
               </div>
               <div className="footer-contact-item">
                 <Icon name="grid" />

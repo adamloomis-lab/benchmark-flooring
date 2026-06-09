@@ -1,5 +1,5 @@
+import { Link } from 'wouter'
 import LegalLayout from '../components/LegalLayout'
-import { company } from '../data/site'
 
 export default function Terms() {
   return (
@@ -36,7 +36,7 @@ export default function Terms() {
 
       <h2>Contact us</h2>
       <p>
-        Questions about these terms? Email us at <a href={`mailto:${company.email}`}>{company.email}</a>.
+        Questions about these terms? Reach us through our <Link href="/quote">contact form</Link>.
       </p>
     </LegalLayout>
   )
