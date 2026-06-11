@@ -30,7 +30,7 @@ export const company = {
   shortBlurb:
     'Mobile flooring installation for Northeast Ohio homeowners who want straight answers, skilled work, and a better in-home experience. Carpet, tile and stone, luxury vinyl plank, laminate, and hardwood.',
   social: {
-    facebook: '',
+    facebook: 'https://www.facebook.com/profile.php?id=61590977930241',
     instagram: '',
   },
 } as const
