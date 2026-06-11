@@ -203,6 +203,12 @@ export default function Quote() {
                   <a href={company.phoneHref}>{company.phone}</a>
                 </div>
               ) : null}
+              {company.phone2 ? (
+                <div className="contact-item">
+                  <Icon name="phone" />
+                  <a href={company.phone2Href}>{company.phone2}</a>
+                </div>
+              ) : null}
               <div className="contact-item">
                 <Icon name="mail" />
                 <p>Send your project details using the form and we'll follow up with you personally.</p>

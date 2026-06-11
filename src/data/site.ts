@@ -13,6 +13,9 @@ export const company = {
   region: 'Northeast Ohio',
   phone: '(234) 350-9272',
   phoneHref: 'tel:+12343509272',
+  // Secondary number shown on the quote page as an alternate way to reach us.
+  phone2: '(937) 499-3645',
+  phone2Href: 'tel:+19374993645',
   // NOTE: the owner's email is intentionally NOT rendered anywhere on the site
   // (no mailto links, not in JSON-LD) to keep it off scrapers. Form submissions
   // are routed to it via a Netlify email notification configured server-side.
