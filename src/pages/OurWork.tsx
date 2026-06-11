@@ -20,7 +20,7 @@ export default function OurWork() {
     <>
       <div className="page-hero">
         <div className="page-hero-bg">
-          <img src="/images/hardwood.webp" alt="" />
+          <img src="/images/gallery/lvp-living-room-fireplace.webp" alt="" />
         </div>
         <div className="container">
           <div className="content">
@@ -63,7 +63,7 @@ export default function OurWork() {
               <article className="gallery-card" key={`${g.title}-${i}`}>
                 <div className="gallery-card-img">
                   {g.image ? (
-                    <img src={g.image} alt={g.title} />
+                    <img src={g.image} alt={g.title} loading="lazy" />
                   ) : (
                     <div className="gallery-placeholder">
                       <Icon name="image" size={44} />

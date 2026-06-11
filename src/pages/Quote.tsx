@@ -50,7 +50,7 @@ export default function Quote() {
     <>
       <div className="page-hero">
         <div className="page-hero-bg">
-          <img src="/images/tile.webp" alt="" />
+          <img src="/images/gallery/tile-marble-look-bathroom-white.webp" alt="" />
         </div>
         <div className="container">
           <div className="content">

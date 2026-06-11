@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div className="page-hero" style={{ paddingBottom: '7rem', minHeight: '70vh' }}>
       <div className="page-hero-bg">
-        <img src="/images/hero-room.webp" alt="" />
+        <img src="/images/gallery/lvp-living-room.webp" alt="" />
       </div>
       <div className="container">
         <div className="content">

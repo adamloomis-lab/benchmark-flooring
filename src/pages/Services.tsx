@@ -8,7 +8,7 @@ export default function Services() {
     <>
       <div className="page-hero">
         <div className="page-hero-bg">
-          <img src="/images/gallery-room.webp" alt="" />
+          <img src="/images/gallery/lvp-hallway.webp" alt="" />
         </div>
         <div className="container">
           <div className="content">

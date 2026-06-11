@@ -3,9 +3,9 @@ import { company, serviceAreas, services } from '../data/site'
 // Production domain. The live Netlify site uses the apex as primary and 301s
 // www -> apex, so canonicals/sitemap/OG/schema all use the apex to match the
 // final served URL (no canonical->redirect mismatch).
-export const SITE_URL = 'https://benchmarkflooringllc.com'
+export const SITE_URL = 'https://benchmarkflooringohio.com'
 
-const OG_IMAGE = '/images/hero-room.webp'
+const OG_IMAGE = '/images/gallery/lvp-living-room-fireplace.webp'
 
 export const abs = (path: string) => `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`
 
@@ -153,7 +153,7 @@ export function getPageMeta(rawPath: string): PageMeta {
         description:
           'Carpet, tile and stone, luxury vinyl plank, laminate, and hardwood flooring installation across Northeast Ohio. Free in-home estimates from Benchmark Flooring.',
         canonical: pageUrl('/services'),
-        ogImage: abs('/images/tile.webp'),
+        ogImage: abs('/images/gallery/tile-marble-look-bathroom-white.webp'),
         jsonLd: [
           businessSchema(),
           ...serviceSchema(),
@@ -169,7 +169,7 @@ export function getPageMeta(rawPath: string): PageMeta {
         description:
           'Browse flooring inspiration for Northeast Ohio homes: carpet, tile, hardwood, LVP and laminate examples from Benchmark Flooring. Filter by material.',
         canonical: pageUrl('/our-work'),
-        ogImage: abs('/images/hardwood.webp'),
+        ogImage: abs('/images/gallery/hardwood-with-tile-border-inlay.webp'),
         jsonLd: [
           businessSchema(),
           breadcrumb([
@@ -184,7 +184,7 @@ export function getPageMeta(rawPath: string): PageMeta {
         description:
           'Benchmark Flooring brings 60+ years of combined experience to Northeast Ohio homeowners: honest in-home guidance and professional carpet, tile, vinyl and hardwood installation.',
         canonical: pageUrl('/about'),
-        ogImage: abs('/images/carpet.webp'),
+        ogImage: abs('/images/gallery/carpet-family-room.webp'),
         jsonLd: [
           businessSchema(),
           {
@@ -205,7 +205,7 @@ export function getPageMeta(rawPath: string): PageMeta {
         description:
           'Request a free in-home flooring estimate from Benchmark Flooring. Carpet, tile, hardwood, LVP and laminate installation across Medina, Summit, Wayne and Stark counties.',
         canonical: pageUrl('/quote'),
-        ogImage: abs('/images/gallery-room.webp'),
+        ogImage: abs('/images/gallery/lvp-living-room-fireplace.webp'),
         jsonLd: [
           businessSchema(),
           faqSchema(),

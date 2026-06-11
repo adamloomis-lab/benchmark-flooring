@@ -71,7 +71,7 @@ export const services: Service[] = [
     slug: 'carpet',
     short: 'Carpet',
     title: 'Carpet',
-    image: '/images/carpet.webp',
+    image: '/images/gallery/carpet-master-bedroom.webp',
     blurb:
       'If you want a room to feel warmer, quieter, and more comfortable underfoot, carpet is still one of the best choices you can make. We help you choose the right style for the space, then install it with the prep work, stretching, and finishing details that help it look clean and wear better from day one.',
     benefits: [
@@ -84,7 +84,7 @@ export const services: Service[] = [
     slug: 'tile-and-stone',
     short: 'Tile and Stone',
     title: 'Tile and Stone',
-    image: '/images/tile.webp',
+    image: '/images/gallery/tile-marble-look-bathroom-white.webp',
     blurb:
       'When you want a floor that can handle moisture, traffic, and everyday wear, tile and stone give you long-term performance with a clean finished look. We focus on flat surfaces, careful layout, and tight finishing so your new floor feels solid, balanced, and built to last.',
     benefits: [
@@ -97,7 +97,7 @@ export const services: Service[] = [
     slug: 'lvp-laminate',
     short: 'LVP / Laminate',
     title: 'Luxury Vinyl Plank and Laminate',
-    image: '/images/hero-room.webp',
+    image: '/images/gallery/lvp-living-room-fireplace.webp',
     blurb:
       'If you want a hard-surface floor that looks sharp and stands up to real life, luxury vinyl plank and laminate are strong options. We help you narrow in on the right product for your room, your traffic level, and the finish you want your home to carry.',
     benefits: [
@@ -110,7 +110,7 @@ export const services: Service[] = [
     slug: 'hardwood',
     short: 'Hardwood',
     title: 'Hardwood',
-    image: '/images/hardwood.webp',
+    image: '/images/gallery/hardwood-with-tile-border-inlay.webp',
     blurb:
       'If you want a floor that feels timeless the moment you walk into the room, hardwood is hard to beat. We plan each project carefully so the grain flow, alignment, and finished look feel intentional, solid, and right for the home you are improving.',
     benefits: [
@@ -128,13 +128,45 @@ export type GalleryItem = {
   image?: string
 }
 
+// Real Benchmark Flooring project photos (Drive folder, June 2026), optimized
+// to webp in /public/images/gallery. Ordered to interleave materials in the
+// unfiltered "All" view.
+const G = (category: GalleryItem['category'], label: string, slug: string, title: string): GalleryItem => ({
+  category,
+  label,
+  title,
+  image: `/images/gallery/${slug}.webp`,
+})
+
 export const gallery: GalleryItem[] = [
-  { category: 'carpet', label: 'Carpet', title: 'Soft carpet finish for bedrooms and family rooms', image: '/images/carpet.webp' },
-  { category: 'tile', label: 'Tile', title: 'Clean tile look for kitchens, baths, and entries', image: '/images/tile.webp' },
-  { category: 'lvp', label: 'LVP', title: 'Wood-look LVP style for open living spaces', image: '/images/gallery-room.webp' },
-  { category: 'hardwood', label: 'Hardwood', title: 'Classic hardwood character for main living areas', image: '/images/hardwood.webp' },
-  { category: 'lvp', label: 'LVP', title: 'Open-concept living room flooring inspiration' },
-  { category: 'tile', label: 'Tile', title: 'Welcoming entryway tile inspiration' },
-  { category: 'carpet', label: 'Carpet', title: 'Comfort-focused bedroom carpet inspiration' },
-  { category: 'hardwood', label: 'Hardwood', title: 'Statement hardwood inspiration for larger rooms' },
+  G('hardwood', 'Hardwood', 'hardwood-with-tile-border-inlay', 'Hand-finished hardwood with a tile border inlay'),
+  G('lvp', 'LVP', 'lvp-living-room-fireplace', 'Luxury vinyl plank in a fireplace living room'),
+  G('carpet', 'Carpet', 'carpet-master-bedroom', 'Plush new carpet in a master bedroom'),
+  G('tile', 'Tile', 'tile-marble-look-bathroom-white', 'Marble-look tile in a bright bathroom'),
+  G('lvp', 'LVP', 'lvp-kitchen-green-cabinets', 'Wood-look LVP in a remodeled kitchen'),
+  G('carpet', 'Carpet', 'carpet-family-room', 'Comfortable carpet in a family room'),
+  G('lvp', 'LVP', 'lvp-stairs-modern-railing', 'LVP stair landing with a modern railing'),
+  G('tile', 'Tile', 'tile-marble-look-bathroom-dark', 'Dark marble-look bathroom tile'),
+  G('lvp', 'LVP', 'lvp-kitchen-light', 'Light luxury vinyl plank kitchen floor'),
+  G('carpet', 'Carpet', 'carpet-bright-bedroom', 'Soft carpet in a bright bedroom'),
+  G('lvp', 'LVP', 'lvp-hallway', 'Luxury vinyl plank hallway'),
+  G('tile', 'Tile', 'tile-bathroom-install', 'Tile and stone bathroom installation'),
+  G('lvp', 'LVP', 'lvp-sunlit-room', 'Sunlit luxury vinyl plank flooring'),
+  G('carpet', 'Carpet', 'carpet-empty-living-room', 'Fresh carpet in a living room'),
+  G('lvp', 'LVP', 'lvp-living-room', 'Open-concept luxury vinyl plank living room'),
+  G('carpet', 'Carpet', 'carpet-staircase-landing', 'Carpeted staircase and landing'),
+  G('lvp', 'LVP', 'lvp-room-white-trim', 'Luxury vinyl plank with crisp white trim'),
+  G('carpet', 'Carpet', 'carpet-guest-bedroom', 'Cozy carpet in a guest bedroom'),
+  G('lvp', 'LVP', 'lvp-staircase', 'Luxury vinyl plank staircase'),
+  G('carpet', 'Carpet', 'carpet-bedroom', 'New bedroom carpet'),
+  G('lvp', 'LVP', 'lvp-stairs-wood-look', 'Wood-look LVP staircase'),
+  G('carpet', 'Carpet', 'carpet-room-corner-wood-trim', 'Carpet finished against warm wood trim'),
+  G('lvp', 'LVP', 'lvp-stairs-in-progress', 'Luxury vinyl plank stair installation'),
+  G('carpet', 'Carpet', 'carpet-bedroom-loft', 'Carpeted bedroom loft'),
+  G('lvp', 'LVP', 'lvp-bathroom', 'Luxury vinyl plank bathroom floor'),
+  G('carpet', 'Carpet', 'carpet-hallway-to-room', 'Carpeted hallway into a bedroom'),
+  G('tile', 'Tile', 'decorative-speckled-floor', 'Decorative speckled floor finish'),
+  G('carpet', 'Carpet', 'carpet-staircase', 'Carpeted staircase'),
+  G('carpet', 'Carpet', 'carpet-tile-commercial-hallway', 'Commercial carpet-tile hallway'),
+  G('carpet', 'Carpet', 'carpet-tile-commercial-corridor', 'Commercial carpet-tile corridor'),
 ]

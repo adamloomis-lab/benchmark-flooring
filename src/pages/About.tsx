@@ -57,7 +57,7 @@ export default function About() {
     <>
       <div className="page-hero">
         <div className="page-hero-bg">
-          <img src="/images/carpet.webp" alt="" />
+          <img src="/images/gallery/carpet-family-room.webp" alt="" />
         </div>
         <div className="container">
           <div className="content">

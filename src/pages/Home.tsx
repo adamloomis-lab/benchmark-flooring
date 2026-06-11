@@ -45,7 +45,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-bg">
-          <img src="/images/hero-room.webp" alt="Finished flooring in a bright Northeast Ohio home" />
+          <img src="/images/gallery/hardwood-with-tile-border-inlay.webp" alt="Finished hardwood flooring in a Northeast Ohio home" />
         </div>
         <div className="container">
           <div className="hero-grid">
