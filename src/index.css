@@ -179,7 +179,22 @@ nav.desktop-nav a {
 nav.desktop-nav a:hover, nav.desktop-nav a.active { color: var(--copper); }
 
 .header-cta { display: none; }
-@media (min-width: 1024px) { .header-cta { display: block; } }
+@media (min-width: 1024px) { .header-cta { display: flex; align-items: center; gap: 1.5rem; } }
+
+.header-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+.header-phone:hover { color: var(--copper); }
+.header-phone svg { color: var(--copper); }
 
 .mobile-menu-btn {
   display: flex;
@@ -252,10 +267,13 @@ nav.desktop-nav a:hover, nav.desktop-nav a.active { color: var(--copper); }
   background: rgba(15,24,43,0.96);
   border-top: 1px solid rgba(255,255,255,0.1);
   backdrop-filter: blur(12px);
+  display: flex;
+  gap: 0.6rem;
 }
 @media (min-width: 1024px) { .mobile-cta-bar { display: none; } }
 
-.mobile-cta-bar .btn { width: 100%; justify-content: center; }
+.mobile-cta-bar .btn { flex: 1; width: auto; justify-content: center; }
+.mobile-cta-call { flex: 0 0 34%; }
 
 /* ── Hero ── */
 .hero {

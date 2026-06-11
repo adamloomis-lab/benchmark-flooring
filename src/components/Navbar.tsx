@@ -32,6 +32,12 @@ export default function Navbar() {
           </nav>
 
           <div className="header-cta">
+            {company.phone ? (
+              <a href={company.phoneHref} className="header-phone">
+                <Icon name="phone" size={15} />
+                {company.phone}
+              </a>
+            ) : null}
             <Link href="/quote" className="btn btn-copper">
               Get a Free Quote
               <Icon name="arrow" />
@@ -81,6 +87,12 @@ export default function Navbar() {
 export function MobileCtaBar() {
   return (
     <div className="mobile-cta-bar">
+      {company.phone ? (
+        <a href={company.phoneHref} className="btn btn-outline-light mobile-cta-call">
+          <Icon name="phone" size={15} />
+          Call
+        </a>
+      ) : null}
       <Link href="/quote" className="btn btn-copper">
         Get a Free Quote
         <Icon name="arrow" />

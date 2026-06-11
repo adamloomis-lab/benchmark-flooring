@@ -11,9 +11,8 @@ export const company = {
   shortName: 'Benchmark Flooring',
   tagline: 'Where Every Job Sets the Standard',
   region: 'Northeast Ohio',
-  // TODO: replace with the real published number when available.
-  phone: '',
-  phoneHref: '',
+  phone: '(234) 350-9272',
+  phoneHref: 'tel:+12343509272',
   // NOTE: the owner's email is intentionally NOT rendered anywhere on the site
   // (no mailto links, not in JSON-LD) to keep it off scrapers. Form submissions
   // are routed to it via a Netlify email notification configured server-side.
