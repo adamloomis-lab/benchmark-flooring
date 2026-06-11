@@ -169,7 +169,7 @@ export function getPageMeta(rawPath: string): PageMeta {
         description:
           'Browse flooring inspiration for Northeast Ohio homes: carpet, tile, hardwood, LVP and laminate examples from Benchmark Flooring. Filter by material.',
         canonical: pageUrl('/our-work'),
-        ogImage: abs('/images/gallery/hardwood-with-tile-border-inlay.webp'),
+        ogImage: abs('/images/gallery/hardwood-transition-to-tile.webp'),
         jsonLd: [
           businessSchema(),
           breadcrumb([

@@ -109,7 +109,7 @@ export const services: Service[] = [
     slug: 'hardwood',
     short: 'Hardwood',
     title: 'Hardwood',
-    image: '/images/gallery/hardwood-with-tile-border-inlay.webp',
+    image: '/images/gallery/hardwood-transition-to-tile.webp',
     blurb:
       'If you want a floor that feels timeless the moment you walk into the room, hardwood is hard to beat. We plan each project carefully so the grain flow, alignment, and finished look feel intentional, solid, and right for the home you are improving.',
     benefits: [
@@ -138,7 +138,7 @@ const G = (category: GalleryItem['category'], label: string, slug: string, title
 })
 
 export const gallery: GalleryItem[] = [
-  G('hardwood', 'Hardwood', 'hardwood-with-tile-border-inlay', 'Hand-finished hardwood with a tile border inlay'),
+  G('hardwood', 'Hardwood', 'hardwood-transition-to-tile', 'Hardwood floor with a clean transition to tile'),
   G('lvp', 'LVP', 'lvp-living-room-fireplace', 'Luxury vinyl plank in a fireplace living room'),
   G('carpet', 'Carpet', 'carpet-master-bedroom', 'Plush new carpet in a master bedroom'),
   G('tile', 'Tile', 'tile-marble-look-bathroom-white', 'Marble-look tile in a bright bathroom'),
