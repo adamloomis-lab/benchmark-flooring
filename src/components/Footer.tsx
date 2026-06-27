@@ -2,8 +2,6 @@ import { Link } from 'wouter'
 import { company, nav, serviceAreas, services } from '../data/site'
 import Icon from './Icon'
 
-const mapsHref = (q: string) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`
-
 export default function Footer() {
   const serviceLine = services.map((s) => s.short).join(' • ')
 
@@ -49,14 +47,7 @@ export default function Footer() {
             <h4>Service Areas</h4>
             <div className="footer-areas">
               {serviceAreas.map((area) => (
-                <a
-                  key={area}
-                  href={mapsHref(`${area}, Ohio`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {area}
-                </a>
+                <span key={area}>{area}</span>
               ))}
             </div>
           </div>
