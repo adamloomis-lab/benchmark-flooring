@@ -12,7 +12,7 @@ export default function NotFound() {
           <p className="eyebrow">404</p>
           <h1>We couldn't find that page.</h1>
           <p style={{ marginBottom: '2rem' }}>
-            The page you were looking for may have moved. Let's get you back to firm ground — head home
+            The page you were looking for may have moved. Let's get you back to firm ground. Head home
             or request your free in-home flooring quote.
           </p>
           <div className="hero-btns" style={{ marginTop: 0 }}>
